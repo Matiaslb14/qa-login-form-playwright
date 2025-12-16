@@ -31,7 +31,7 @@ qa-login-form-playwright/
 
 ## ▶️ Cómo ejecutar el proyecto
 ```powershell
-git clone https://github.com/USUARIO/qa-login-form-playwright.git
+git clone https://github.com/Matiaslb14/qa-login-form-playwright.git
 ```
 ```powershell
 cd qa-login-form-playwright
