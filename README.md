@@ -57,6 +57,7 @@ pytest
 ## 📝 Notas de QA
 - El test se ejecuta en modo headless por defecto
 - Playwright interactúa con el navegador como un usuario real
+- Se utiliza un sitio público de pruebas con credenciales conocidas
 
 ## 📈 Mejoras futuras
 - Implementar Page Object Model
