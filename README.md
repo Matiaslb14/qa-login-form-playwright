@@ -31,24 +31,19 @@ qa-login-form-playwright/
 
 ## ▶️ Cómo ejecutar el proyecto
 ```powershell
+# Clonar el repositorio e ingresar al proyecto
 git clone https://github.com/Matiaslb14/qa-login-form-playwright.git
-```
-```powershell
 cd qa-login-form-playwright
-```
-```powershell
+
+# Crear y activar entorno virtual
 python -m venv .venv
-```
-```powershell
 .\.venv\Scripts\Activate.ps1
-```
-```powershell
+
+# Instalar dependencias y navegadores
 pip install -r requirements.txt
-```
-```powershell
 python -m playwright install
-```
-```powershell
+
+# Ejecutar los tests
 pytest
 ```
 ## ✅ Escenarios automatizados
