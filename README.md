@@ -63,6 +63,6 @@ pytest
 
 ## 📈 Mejoras futuras
 - Implementar **Page Object Model (POM)**
-- Agregar fixtures con conftest.py
+- Agregar fixtures con `conftest.py`
 - Automatizar escenarios negativos
 - Incorporar captura automática de screenshots en fallos
