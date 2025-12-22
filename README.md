@@ -52,16 +52,16 @@ pytest
 ## ✅ Escenarios automatizados
 - Login exitoso con credenciales válidas
 
-# 🧠 Decisiones técnicas
+## 🧠 Decisiones técnicas
 - Se utiliza Playwright por su velocidad y confiabilidad en automatización web moderna.
 - El test se ejecuta en modo headless para facilitar su ejecución en distintos entornos.
 - Se utiliza un sitio público de pruebas con credenciales conocidas para evitar dependencias externas.
 
-# 📊 Reportes / Evidencia (cuando aplique)
+## 📊 Reportes / Evidencia (cuando aplique)
 - La ejecución de los tests se valida mediante la salida estándar de Pytest.
 - No se incluyen evidencias visuales al tratarse de un proyecto introductorio.
 
-# 📈 Mejoras futuras
+## 📈 Mejoras futuras
 - Implementar Page Object Model (POM)
 - Agregar fixtures con conftest.py
 - Automatizar escenarios negativos
