@@ -33,11 +33,7 @@ qa-login-form-playwright/
 └── README.md
 ```
 ## ▶️ Cómo ejecutar el proyecto
-<<<<<<< HEAD
-```bash
-=======
 ```powershell
->>>>>>> 7ee273f4669a0d5db8894f8f3d78cefc8ce639d1
 # Clonar el repositorio e ingresar al proyecto
 git clone https://github.com/Matiaslb14/qa-login-form-playwright.git
 cd qa-login-form-playwright
@@ -56,17 +52,10 @@ pytest
 ## ✅ Escenarios automatizados
 - Login exitoso con credenciales válidas
 
-<<<<<<< HEAD
 # 🧠 Decisiones técnicas
 - Se utiliza Playwright por su velocidad y confiabilidad en automatización web moderna.
 - El test se ejecuta en modo headless para facilitar su ejecución en distintos entornos.
 - Se utiliza un sitio público de pruebas con credenciales conocidas para evitar dependencias externas.
-=======
-## 📝 Notas de QA
-- El test se ejecuta en modo headless por defecto
-- Playwright interactúa con el navegador como un usuario real
-- Se utiliza un sitio público de pruebas con credenciales conocidas
->>>>>>> 7ee273f4669a0d5db8894f8f3d78cefc8ce639d1
 
 # 📊 Reportes / Evidencia (cuando aplique)
 - La ejecución de los tests se valida mediante la salida estándar de Pytest.
