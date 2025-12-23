@@ -1,14 +1,15 @@
 # QA Login Automation – Playwright + Pytest
 
 ## 📌 Descripción
-Proyecto de **QA Automation** enfocado en la validación del **flujo de login** de una aplicación web utilizando **Playwright** y **Pytest**.  
-El objetivo es simular la interacción real de un usuario y verificar el comportamiento esperado ante un inicio de sesión exitoso, sirviendo como primer acercamiento a la automatización de pruebas web.
+Proyecto de QA Automation enfocado en la validación del flujo de login de una aplicación web utilizando **Playwright** y **Pytest**.
+
+El objetivo es automatizar un **flujo crítico de autenticación**, simulando la interacción real de un usuario y verificando el comportamiento esperado ante un inicio de sesión exitoso.
 
 ## ⭐ Características / Features Clave
 - Automatización de pruebas web con **Playwright**
 - Ejecución de tests en navegador **Chromium**
+- Validación de **flujo crítico de autenticación**
 - Simulación de interacción real de usuario
-- Estructura simple y directa orientada a aprendizaje inicial
 - Ejecución en modo **headless**
 
 ## 🧪 Qué se está probando
@@ -20,7 +21,7 @@ El objetivo es simular la interacción real de un usuario y verificar el comport
 - **Python**
 - **Pytest**
 - **Playwright**
-- Chromium (modo headless)
+- **Chromium** (modo headless)
 
 ## 📂 Estructura del Proyecto
 ```text
@@ -56,10 +57,11 @@ pytest
 - Se utiliza **Playwright** por su velocidad y confiabilidad en automatización web moderna.
 - El test se ejecuta en modo **headless** para facilitar su ejecución en distintos entornos.
 - Se utiliza un sitio público de pruebas con credenciales conocidas para evitar dependencias externas.
+- Los tests priorizan **legibilidad y mantenibilidad** sobre complejidad innecesaria.
 
 ## 📊 Reportes / Evidencia (cuando aplique)
 - La ejecución de los tests se valida mediante la salida estándar de **Pytest**.
-- No se incluyen evidencias visuales al tratarse de un proyecto introductorio.
+- Al tratarse de una validación funcional básica, no se incluyen evidencias visuales.
 
 ## 📈 Mejoras futuras
 - Implementar **Page Object Model (POM)**
