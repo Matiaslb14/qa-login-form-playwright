@@ -1,9 +1,9 @@
 # QA Login Automation – Playwright + Pytest
 
 ## 📌 Descripción
-Proyecto de QA Automation enfocado en la validación del flujo de login de una aplicación web utilizando **Playwright** y **Pytest**.
+Proyecto de QA Automation enfocado en la validación del **flujo de autenticación** de una aplicación web utilizando **Playwright** y **Pytest**.
 
-El objetivo es automatizar un **flujo crítico de autenticación**, simulando la interacción real de un usuario y verificando el comportamiento esperado ante un inicio de sesión exitoso.
+El objetivo es automatizar un **flujo crítico de negocio**, simulando la interacción real de un usuario y validando el comportamiento esperado ante un inicio de sesión exitoso.
 
 ## ⭐ Características / Features Clave
 - Automatización de pruebas web con **Playwright**
@@ -51,7 +51,7 @@ python -m playwright install
 pytest
 ```
 ## ✅ Escenarios automatizados
-- Login exitoso con credenciales válidas
+- Login exitoso con credenciales válidas (happy path)
 
 ## 🧠 Decisiones técnicas
 - Se utiliza **Playwright** por su velocidad y confiabilidad en automatización web moderna.
