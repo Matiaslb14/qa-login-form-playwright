@@ -1,49 +1,62 @@
-# QA Login Automation – Playwright + Pytest
+🌍 Language: [English](README.md) | [Español](README.es.md)
+
 [![CI](https://github.com/Matiaslb14/qa-login-form-playwright/actions/workflows/ci.yml/badge.svg)](https://github.com/Matiaslb14/qa-login-form-playwright/actions)
-## 📌 Descripción
-Proyecto de **QA Automation** enfocado en la validación del **flujo de autenticación** de una aplicación web, utilizando **Playwright** y **Pytest**.
 
-El objetivo es automatizar un **flujo crítico de negocio**, aplicando buenas prácticas de la industria como **Page Object Model (POM)**, **fixtures reutilizables**, **escenarios negativos**, **ejecución por marcadores** y **captura automática de evidencias en fallos**, asegurando estabilidad tanto en ejecución local como en **CI/CD**.
+# QA Login Automation – Playwright + Pytest
 
-Se utiliza una aplicación pública de pruebas para simular un entorno real sin dependencias externas.
+## 📌 Description
+QA Automation project focused on validating the **authentication flow** of a web application using **Playwright** and **Pytest**.
 
-## ⭐ Características / Features Clave
-- Automatización de UI con **Playwright**
-- Arquitectura basada en **Page Object Model (POM)**
-- Uso de **fixtures** para setup y teardown
-- Separación de tests:
-    - **Smoke** (críticos y rápidos)
-    - **Regression** (escenarios negativos y validaciones extendidas)
-- Ejecución en modo **headless**
-- **Captura automática de screenshots** en caso de fallo
-- **Integración continua con GitHub Actions**
-- Enfoque en **calidad, mantenibilidad y estabilidad**
+The goal of this project is to automate a **critical business flow**, applying industry best practices such as **Page Object Model (POM)**, **reusable fixtures**, **negative scenarios**, **marker-based execution**, and **automatic evidence capture on failures**, ensuring stability in both **local execution** and **CI/CD pipelines**.
 
-## 🧪 Qué se prueba
-- Autenticación exitosa (happy path)
-- Escenarios negativos:
-    - Usuario inválido
-    - Password inválida
-    - Campos vacíos 
-- Comportamiento ante inputs anómalos (security-aware checks)
-- Mensajes de error controlados y consistentes
+A public test application is used to simulate a real-world environment without external dependencies.
 
-## 🔐 Security-aware checks (QA perspective)
+---
 
-Desde una perspectiva de QA (no pentesting), se validan:
-- Manejo seguro de inputs inesperados o largos
-- Ausencia de crashes ante datos anómalos
-- Mensajes de error controlados (sin filtración de información sensible)
-- Comportamiento estable del flujo de autenticación
+## ⭐ Key Features
+- UI automation using **Playwright**
+- Architecture based on **Page Object Model (POM)**
+- Use of **fixtures** for setup and teardown
+- Test suite separation:
+  - **Smoke tests** (fast, critical checks)
+  - **Regression tests** (negative scenarios and extended validations)
+- **Headless** execution
+- Automatic **screenshot capture on test failures**
+- **Continuous Integration with GitHub Actions**
+- Strong focus on **quality, maintainability, and stability**
 
-## 🛠 Stack Tecnológico
+---
+
+## 🧪 What Is Tested
+- Successful authentication (happy path)
+- Negative scenarios:
+  - Invalid username
+  - Invalid password
+  - Empty fields
+- Behavior under anomalous inputs (security-aware checks)
+- Controlled and consistent error messages
+
+---
+
+## 🔐 Security-Aware Checks (QA Perspective)
+From a QA (non-pentesting) perspective, the following are validated:
+- Safe handling of unexpected or oversized inputs
+- No application crashes when receiving anomalous data
+- Controlled error messages without sensitive information leakage
+- Stable behavior of the authentication flow
+
+---
+
+## 🛠 Tech Stack
 - **Python**
 - **Pytest**
 - **Playwright**
 - **Chromium**
 - **GitHub Actions**
 
-## 📂 Estructura del Proyecto
+---
+
+## 📂 Project Structure
 ```text
 qa-login-form-playwright/
 ├── pages/
@@ -61,60 +74,54 @@ qa-login-form-playwright/
 ├── requirements.txt
 └── README.md
 ```
-## ▶️ Cómo ejecutar el proyecto
-### Ejecución local
-```powershell
-# Clonar el repositorio
+## ▶️ How to Run the Project
+### Local Execution
+```bash
 git clone https://github.com/Matiaslb14/qa-login-form-playwright.git
 cd qa-login-form-playwright
 
-# Crear y activar entorno virtual
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-# Instalar dependencias
 pip install -r requirements.txt
 python -m playwright install chromium
 
-# Ejecutar todos los tests
 pytest
 ```
-### Ejecutar por tipo de prueba
-```powershell
-# Smoke tests (rápidos, críticos)
+### Run Tests by Type
+```bash
+# Smoke tests (fast, critical)
 pytest -m smoke
 
 # Regression tests
 pytest -m regression
 ```
 ## 🤖 CI – GitHub Actions
-- Los tests se ejecutan automáticamente en cada **push** y **pull request**
-- Se ejecutan en modo **headless**
-- En caso de fallo, se generan **screenshots automáticos** como evidencia
-- El pipeline actúa como validación de integración continua
+- Tests run automatically on every **push** and **pull request**
+- Executed in **headless mode**
+- **Automatic screenshots** are generated on failures
+- The pipeline acts as continuous integration validation
 
-## 🧠 Decisiones técnicas
-- Se utiliza **Playwright** por su velocidad, estabilidad y soporte moderno para UI testing.
-- Se implementa **POM** para mejorar mantenibilidad y escalabilidad.
-- Los tests se dividen por marcadores para optimizar tiempos de ejecución.
-- Se prioriza **calidad del diseño de tests** por sobre cantidad.
-- No se utilizan frameworks innecesarios para mantener el foco en QA Automation.
+## 🧠 Technical Decisions
+- **Playwright** is used for its speed, stability, and modern UI testing support
+- **POM** is implemented to improve maintainability and scalability
+- Marker-based execution optimizes test runtime
+- Test design prioritizes **quality over quantity**
+- No unnecessary frameworks are used to keep the focus on QA Automation
 
-## 📌 Alcance del proyecto
+## 📌 Project Scope
+**Included**
+- UI automation
+- Positive and negative scenarios
+- Automatic execution evidence
+- CI/CD integration
 
-**Incluye**
-- Automatización de UI
-- Escenarios positivos y negativos
-- Evidencia automática en fallos
-- CI/CD
-
-**No incluye**
-- Backend propio
-- Pruebas de carga
+**Not Included**
+- Custom backend
+- Load testing
 - Pentesting
 
-## 📈 Próximos pasos
-
-- Reportes HTML automáticos en CI
-- Ejecución paralela de tests
-- Extensión del flujo a logout y recuperación de sesión
+## 📈 Next Steps
+- Automatic HTML reports in CI
+- Parallel test execution
+- Extension of the flow to logout and session recovery
