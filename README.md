@@ -113,7 +113,7 @@ pytest -m regression
 - Pruebas de carga
 - Pentesting
 
-📈 Próximos pasos (opcional)
+📈 Próximos pasos
 
 - Reportes HTML automáticos en CI
 - Ejecución paralela de tests
